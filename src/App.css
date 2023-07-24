@@ -1,0 +1,165 @@
+/* Global styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 70px; /* Adjust the height to your desired value */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 20px; /* Add some padding to the header */
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-controls button {
+  font-size: 1rem; /* Adjust the font size to your desired value */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: bisque;
+  color: brown;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.header-controls button:hover {
+  background-color: #ffa07a;
+}
+
+/* Button styles */
+button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: bisque;
+  color: brown;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #ffa07a;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.search-container input[type="text"] {
+  font-size: 1rem; /* Adjust the font size to your desired value */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.search-container .search-button {
+  font-size: 1rem; /* Adjust the font size to your desired value */
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: bisque;
+  color: brown;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container .search-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.search-container .search-button:hover {
+  background-color: #ffa07a;
+}
+
+/* NFT container styles */
+.nft-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nft-item {
+  flex: 0 0 calc(25% - 20px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.nft-image {
+  max-width: 25px; /* Adjust the max-width as per your preference */
+  max-height: 25px; /* Adjust the max-height as per your preference */
+  object-fit: contain;
+}
+
+.nft-item img {
+  max-width: 150px; /* Set your desired max-width */
+  max-height: 150px; /* Set your desired max-height */
+  /* You can also add other styles like margin, border, etc., if needed */
+}
+
+
+.nft-name {
+  font-size: 16px; /* Change the font size to your desired value */
+  margin-bottom: 5px;
+}
+
+.nft-info {
+  font-size: 12px; /* Change the font size to your desired value */
+  margin-bottom: 3px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* To stack the input and button vertically */
+  padding: 16px;
+  margin-top: 20px; /* Add some space between the navbar and search bar */
+}
